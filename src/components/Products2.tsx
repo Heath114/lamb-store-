@@ -30,22 +30,16 @@ export default function ProductsSection() {
     // Add more categories as needed
     const categoryMap = {
         'All': t.products.all_products,
-        'Phones': 'Phones',
-        'Tablets': 'Tablets',
-        'iPads': 'iPads',
-        // 'Laptops': 'Laptops',
-        // 'Computers': 'Computers',
-        // 'Wearables': 'Wearables',
-        'Accessories': 'Accessories'
+        'table-lamps': 'Table Lamps',
+        'bedside-lamps': 'Bedside Lamps',
     }
     
     const filteredProjects = filter === 'All'
         ? ProductList
         : ProductList.filter(p => 
-            p.category?.toLowerCase() === categoryMap[filter as keyof typeof categoryMap]?.toLowerCase()
+            p.category?.toLowerCase() === filter.toLowerCase()
         );
 
-    // I was working here on adding filtering logic
     React.useEffect(() => {
         setMounted(true);
     }, []);
@@ -133,7 +127,7 @@ export default function ProductsSection() {
                                       h-full w-full border-r border-neutral-200 last:border-r-0"
                                     onClick={() => router.push(`/${locale}/p/${product.slug}`)}
                                 >
-                                    <div className="aspect-[4/5] w-full bg-gray-50 flex items-center justify-center overflow-hidden mb-2 relative">
+                                    <div className="aspect-[2/3] w-full bg-gray-50 flex items-center justify-center overflow-hidden mb-2 relative">
                                         {/* Main Image */}
                                         <Image
                                             src={product.image ?? '/images/products/placeholder.png'}
@@ -163,11 +157,11 @@ export default function ProductsSection() {
                                         <div className="mt-2">
                                             {product.isSale ? (
                                                 <>
-                                                    <span className="text-xs md:text-sm lg:text-sm text-gray-300 line-through">${(product.originalPrice).toFixed(2)}</span>
-                                                    <span className="text-xs md:text-sm lg:text-sm text-black text-gray-700 ml-2">{`${t.products.from} $${getProductPrice(product).toFixed(2)}`}</span>
+                                                    <span className="text-xs md:text-sm lg:text-sm text-gray-300 line-through">{`${(product.originalPrice).toFixed(2)} JOD`}</span>
+                                                    <span className="text-xs md:text-sm lg:text-sm text-black text-gray-700 ml-2">{`${t.products.from} ${getProductPrice(product).toFixed(2)} JOD`}</span>
                                                 </>
                                             ) : (
-                                                <span className="text-xs md:text-sm lg:text-sm text-gray-700">{`${t.products.from} $${getProductPrice(product).toFixed(2)}`}</span>
+                                                <span className="text-xs md:text-sm lg:text-sm text-gray-700">{`${t.products.from} ${getProductPrice(product).toFixed(2)} JOD`}</span>
                                             )}
                                         </div>
                                     </div>

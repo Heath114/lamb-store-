@@ -25,9 +25,6 @@ export default function Page({ params }: { params: { locale: string } }) {
       <section id="products">
         <Products />
       </section>
-      <section id="brands">
-        <BrandsSection />
-      </section>
       <section id="gallery">
         <ImageSection />
       </section>

@@ -38,349 +38,187 @@ export function getProductPrice(product: Product): number {
 }
 
 export const ProductList: Product[] = [
-    {
-        id: 1,
-        name: "Wirelessww Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/1.webp",
-        brand: "Logitech",
-        category: "Accessories",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-logitech",
-        isSale: true,
-        originalPrice: 29.99,
-        discount: 10,
-    },
-    {
-        id: 2,
-        name: "Wireless Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/2.webp",
-        brand: "Logitech",
-        category: "Tablets",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        price: 26.99,
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-tablet",
-        isSale: true,
-        originalPrice: 29.99,
-        discount: 10,
-    },
-    {
-        id: 3,
-        name: "v Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/3.webp",
-        brand: "Logitech",
-        category: "Tablets",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-            "Customizable Buttons",
-            "Long Battery Life",
-            "Smooth Tracking",
-            "Compact and Portable",
-            "Lightweight Design",
-            "Easy Setup"
-
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches",
-            display: "6.55 inch, 120Hz AMOLED",
-            Processor: "Qualcomm Snapdragon 888",
-            RAM: "8GB / 12GB",
-            Storage: "128GB / 256GB",
-            OS: "OxygenOS based on Android 11",
-            Cameras: "48MP + 50MP + 2MP Rear, 16MP Front",
-
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual",
-            "Warp Charge 65 Power Adapter",
-            "USB Type-C Cable",
-            "Quick Start Guide"
-
-        ],
-        price: 1292.99,
-        images: ["/images/products/img2.jpg", "/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "bwadwd"
-    },
-    {
-        id: 4,
-        name: "Wireless Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/4.webp",
-        brand: "Logitech",
-        category: "Phones",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        price: 29.99,
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-phone"
-    },
+  // 1) Cordless Table Lamp – variant A
   {
-        id: 5,
-        name: "Wireless Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/img1.jpg",
-        brand: "Logitech",
-        category: "Phones",   
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        price: 29.99,
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-accessories"
+    id: 1,
+    name: "Cordless Table Lamp",
+    description:
+      "Luxury cordless table lamp with 3 color modes, dimmable brightness and invisible touch control. Designed to add a warm, elegant glow to any space.",
+    image: "/images/lamb/lamb/1.png",
+    hoverImage: "/images/lamb/lambcover/1.png",
+    brand: "Necessary Light",
+    category: "table-lamps",
+    colors: ["Gold", "Silver", "Black"],
+    features: [
+      "3 color modes (white, warm, natural)",
+      "Brightness dimmable",
+      "Invisible touch switch",
+      "Cordless & rechargeable",
+      "Battery life 6–7 hours",
+      "High-quality build"
+    ],
+    specifications: {
+      "Light Modes": "White, Warm, Natural",
+      "Control": "Touch control (invisible switch)",
+      "Power Supply": "Rechargeable battery",
+      "Battery Life": "6–7 hours (approx.)",
+      "Usage": "Living room, bedroom, cafés, desks"
     },
-    {
-        id: 6,
-        name: "Samsung Galaxy S21",
-        description: "The latest Samsung Galaxy smartphone with features.",
-        price: 799.99,
-        brand: "Samsung",
-        image: "/images/products/img2.jpg",
-        category: "Accessories",
-        colors: ["Phantom Gray", "Phantom White", "Phantom Violet", "Phantom Pink"],
-        features: [
-            "6.2-inch Dynamic AMOLED 2X Display",
-            "Exynos 2100 / Snapdragon 888 Processor",
-            "Triple Rear Camera System",
-            "4000mAh Battery with Fast Charging",
-            "5G Capable"
-        ],
-        specifications: {
-            Display: "6.2 inch, 120Hz AMOLED",
-            Processor: "Exynos 2100 / Snapdragon 888",
-            RAM: "8GB",
-            Storage: "128GB / 256GB",
-            Battery: "4000mAh", 
-            OS: "Android 11",
-            Cameras: "12MP + 64MP + 12MP Rear, 10MP Front",
-        },
-        warranty: "1 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Samsung Galaxy S21 Device",
-            "USB Type-C Cable",
-            "Quick Start Guide",
-            "Ejection Pin"
-        ],
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img4.jpg", "/images/products/img1.jpg"],
-        slug: "samsung-galaxy-s21"
+    whatsInTheBox: ["Cordless table lamp", "Charging cable", "User guide"],
+    price: 25,
+    images: [
+      "/images/lamb/lamb/1.png",
+      "/images/lamb/lambcover/1.png"
+    ],
+    slug: "cordless-table-lamp-a",
+    tags: ["Cordless", "Table Lamp", "Touch Control", "Dimmable"]
+  },
+
+  // 2) Cordless Table Lamp – variant B (same lamp, second image)
+  {
+    id: 2,
+    name: "Cordless Table Lamp",
+    description:
+      "Cordless table lamp with 3 color-changing light and dimmable brightness. A modern, high-quality piece for cozy corners and bedside tables.",
+    image: "/images/lamb/lamb/2.png",
+    hoverImage: "/images/lamb/lambcover/2.png",
+    brand: "Necessary Light",
+    category: "table-lamps",
+    colors: ["Gold", "Silver", "Black"],
+    features: [
+      "3 color modes (white, warm, natural)",
+      "Brightness dimmable",
+      "Invisible touch switch",
+      "Cordless & rechargeable",
+      "Battery life 6–7 hours",
+      "High-quality build"
+    ],
+    specifications: {
+      "Light Modes": "White, Warm, Natural",
+      "Control": "Touch control (invisible switch)",
+      "Power Supply": "Rechargeable battery",
+      "Battery Life": "6–7 hours (approx.)"
     },
-    {
-        id: 7,
-        name: "Google Pixel 6",
-        description: "Google's flagship smartphone with excellent camera performance.",
-        price: 699.99,
-        image: "/images/products/img3.jpg",
-        brand: "Google",
-        category: "iPads",
-        colors: ["Stormy Black", "Kinda Coral", "Sorta Seafoam", "Cloudy White"],
-        features: [
-            "6.4-inch OLED Display",
-            "Google Tensor Processor",
-            "Adaptive Battery",
-            "Titan M2 Security Chip",
-            "5G Capable"
-        ],
-        specifications: {
-            Display: "6.4 inch, 90Hz OLED",
-            Processor: "Google Tensor",
-            RAM: "8GB",
-            Storage: "128GB / 256GB",
-            Battery: "4614mAh",
-            OS: "Android 12",
-            Cameras: "50MP + 12MP Rear, 8MP Front",
-        },
-        warranty: "1 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Google Pixel 6 Device",
-            "USB Type-C Cable",
-            "Quick Start Guide",
-        ],
-        images: ["/images/products/img4.jpg", "/images/products/img1.jpg", "/images/products/img2.jpg", "/images/products/placeholder.png"],
-        slug: "google-pixel-6"
+    whatsInTheBox: ["Cordless table lamp", "Charging cable", "User guide"],
+    price: 25,
+    images: [
+      "/images/lamb/lamb/2.png",
+      "/images/lamb/lambcover/2.png"
+    ],
+    slug: "cordless-table-lamp-b",
+    tags: ["Cordless", "Table Lamp", "Touch Control", "Dimmable"]
+  },
+
+  // 3) Limited Edition Pleated Lamp (first attached image)
+  {
+    id: 3,
+    name: "Limited Edition Pleated Lamp",
+    description:
+      "A classic pleated-shade lamp with a golden base and soft, cozy light. Limited edition piece that brings a warm, timeless look to any corner.",
+    image: "/images/lamb/lamb/3.png",
+    hoverImage: "/images/lamb/lambcover/3.png",
+    brand: "Necessary Light",
+    category: "bedside-lamps",
+    colors: ["Gold / Cream Shade"],
+    features: [
+      "Elegant pleated fabric shade",
+      "Warm ambient light",
+      "USB charging with status indicator (red = charging, green = full)",
+      "Touch control",
+      "Battery life 6–7 hours (approx.)",
+      "Limited edition"
+    ],
+    specifications: {
+      "Height": "30 cm",
+      "Base Width": "10.5 cm",
+      "Control": "Touch control",
+      "Charging": "USB charging with indicator",
+      "Usage": "Bedside, living room, reading corner"
     },
-    {
-        id: 8,
-        name: "OnePlus 9",
-        description: "A high-performance smartphone with a smooth user experience.",
-        price: 729.99,
-        image: "/images/products/img4.jpg",
-        slug: "oneplus-9",
-        brand: "OnePlus",
-        category: "Accessories",
-        colors: ["Black", "Arctic Sky", "Winter Mist"],
-        images: [
-            "/images/products/img1.jpg",
-            "/images/products/img3.jpg",
-            "/images/products/img2.jpg",
-        ],
-        features: [
-            "120Hz Fluid AMOLED Display",
-            "Hasselblad Triple Camera System",
-            "Snapdragon 888 Processor",
-            "65W Warp Charge + 15W Wireless Charging",
-            "5G Ready"
-        ],
-        specifications: {
-            Display: "6.55 inch, 120Hz AMOLED",
-            Processor: "Qualcomm Snapdragon 888",
-            RAM: "8GB / 12GB",
-            Storage: "128GB / 256GB",
-            Battery: "4500mAh",
-            OS: "OxygenOS based on Android 11",
-            Cameras: "48MP + 50MP + 2MP Rear, 16MP Front",
-        },
-        warranty: "1 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "OnePlus 9 Device",
-            "Warp Charge 65 Power Adapter",
-            "USB Type-C Cable",
-            "Quick Start Guide",
-            "Protective Case",
-        ]
+    whatsInTheBox: ["Pleated lamp", "USB charging cable"],
+    price: 26,
+    images: [
+      "/images/lamb/lamb/3.png",
+      "/images/lamb/lambcover/3.png"
+    ],
+    slug: "limited-edition-pleated-lamp",
+    tags: ["Limited Edition", "Bedside", "Pleated Shade"]
+  },
+
+  // 4) Velora Lamp (second attached image – dome, warm interior shot)
+  {
+    id: 4,
+    name: "Velora Lamp",
+    description:
+      "Where elegance meets warmth. A dome-shaped cordless lamp that turns any surface into a calm, luxurious focal point.",
+    image: "/images/lamb/lamb/4.png",
+    hoverImage: "/images/lamb/lambcover/4.png",
+    brand: "Necessary Light",
+    category: "table-lamps",
+    colors: ["Gold"],
+    features: [
+      "Soft warm light",
+      "Cordless & rechargeable",
+      "Elegant dome design",
+      "Minimalist, luxury aesthetic"
+    ],
+    specifications: {
+      "Height": "Approx. 21 cm",
+      "Shade Width": "Approx. 15.5 cm",
+      "Base Width": "Approx. 10 cm",
+      "Light": "Soft warm ambient light",
+      "Usage": "Living room, sideboard, office desk"
     },
-    {
-        id: 9,
-        name: "Wireless Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/img1.jpg",
-        brand: "Logitech",
-        category: "Accessories",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        price: 29.99,
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-gaming"
+    whatsInTheBox: ["Velora lamp", "Charging cable"],
+    // TODO: set real price once decided
+    price: 0,
+    images: [
+      "/images/lamb/lamb/4.png",
+      "/images/lamb/lambcover/4.png"
+    ],
+    slug: "velora-lamp",
+    tags: ["Dome Lamp", "Luxury", "Warm Light"]
+  },
+
+  // 5) Dome Touch Lamp (third attached image – rounded base & top)
+  {
+    id: 5,
+    name: "Dome Touch Lamp",
+    description:
+      "A unique dome lamp with soft, diffused light and a sculptural silhouette. Perfect for desks, shelves, and bedside tables.",
+    image: "/images/lamb/lamb/5.png",
+    hoverImage: "/images/lamb/lambcover/5.png",
+    brand: "Necessary Light",
+    category: "table-lamps",
+    colors: ["White", "Grey", "Red"],
+    features: [
+      "LED light source",
+      "3 color modes (white, warm, natural)",
+      "Brightness dimmable",
+      "Touch control",
+      "Rechargeable via Type-C",
+      "Battery life 6–7 hours (approx.)"
+    ],
+    specifications: {
+      "Height": "29.5 cm",
+      "Lampshade Diameter": "16 cm",
+      "Material": "ABS / PS",
+      "Light Modes": "White, Warm, Natural",
+      "Charging": "Type-C cable",
+      "Usage": "Bedroom, study, living room"
     },
-    {
-        id: 10,
-        name: "Wireless Mouse",
-        description: "A highprecision wireless mouse with ergonomic design.",
-        image: "/images/products/img1.jpg",
-        brand: "Logitech",
-        category: "Accessories",
-        colors: ["Black", "White", "Blue"],
-        features: [
-            "Ergonomic Design",
-            "Adjustable DPI",
-        ],
-        specifications: {
-            Connectivity: "Wireless 2.4GHz",
-            Battery: "AA Battery (included)",
-            Compatibility: "Windows, macOS, Linux",
-            Weight: "100g",
-            Dimensions: "4.5 x 2.5 x 1.5 inches"
-        },
-        warranty: "2 Year Manufacturer Warranty",
-        whatsInTheBox: [
-            "Wireless Mouse",
-            "USB Receiver",
-            "AA Battery",
-            "User Manual"
-        ],
-        price: 29.99,
-        images: ["/images/products/img2.jpg", "/images/products/img3.jpg", "/images/products/img1.jpg", "/images/products/placeholder.png"],
-        slug: "wireless-mouse-pro"
-    }
+    whatsInTheBox: ["Dome lamp", "Type-C charging cable"],
+    // TODO: set real price once decided
+    price: 0,
+    images: [
+      "/images/lamb/lamb/5.png",
+      "/images/lamb/lambcover/5.png"
+    ],
+    slug: "dome-touch-lamp",
+    tags: ["Dome Lamp", "Touch Control", "Rechargeable"]
+  }
 ];
+
 
 
 

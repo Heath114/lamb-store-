@@ -73,7 +73,7 @@ export function ProductGallery({ mainImage, images, productName }: ProductGaller
             alt={productName}
             width={1200}
             height={1200}
-            className="h-full w-full object-cover transition-transform duration-200"
+            className="h-full w-full object-cover 2xl:object-fill transition-transform duration-200"
             style={{
               transform: showZoom ? `scale(1.5)` : 'scale(1)',
               transformOrigin: `${zoomPosition.x}% ${zoomPosition.y}%`

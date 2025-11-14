@@ -22,45 +22,26 @@ type Slide = {
 const slides: Slide[] = [
   {
     id: 1,
-    title: 'Fast Charging',
+    title: 'Light That Defines the Room',
     subtitle:
-      'A power bank that stays with you wherever you go, ensuring safe and fast charging.',
-    ctaText: 'Shop now',
-    ctaHref: '/products/power-banks',
-    imageUrl: '/slider/img1.jpg',
-    alt: 'Anker fast charging power bank',
+      'Elevate your space with warm, calming glow and minimalist luxury.',
+    ctaText: 'Shop Lamps',
+    ctaHref: '/products',
+    imageUrl: '/images/lamb/image/1.png', // replace with your new lamp hero image
+    alt: 'Luxury modern lamp setup',
   },
   {
     id: 2,
-    title: 'Work. Create. Repeat.',
+    title: 'Where Design Meets Comfort',
     subtitle:
-      'Power your day with reliable capacity and premium build quality.',
-    ctaText: 'Explore',
+      'Modern lamps crafted to bring elegance into your home. Subtle light, big impact.',
+    ctaText: 'Explore Collection',
     ctaHref: '/collections/new',
-    imageUrl: '/slider/bbbb.webp',
-    alt: 'Lifestyle tech setup',
+    imageUrl: '/images/lamb/image/2.png',
+    alt: 'Cozy interior warm lighting',
   },
-  {
-    id: 3,
-    title: 'Browse on the go',
-    subtitle:
-      'Compact design that fits anywhere without compromising performance.',
-    ctaText: 'See details',
-    ctaHref: '/collections/travel',
-    imageUrl: '/slider/ll.webp',
-    alt: 'Travel gear and accessories',
-  },
-  {
-    id: 4,
-    title: 'Ultimate Durability',
-    subtitle:
-      'Rugged and reliable power banks built to withstand the toughest conditions.',
-    ctaText: 'Buy now',
-    ctaHref: '/products/durable-power-banks',
-    imageUrl: '/slider/lll.webp',
-    alt: 'Durable power bank in outdoor setting',
-  }
 ];
+
 
 function ProHeroSlider() {
   return (

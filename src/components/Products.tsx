@@ -82,7 +82,7 @@ export default function ProductsSection() {
                                       h-full w-full border-r border-neutral-200 last:border-r-0"
                                     onClick={() => router.push(`/${locale}/p/${product.slug}`)}
                                 >
-                                <div className="aspect-[4/5] w-full bg-gray-50 flex items-center justify-center overflow-hidden mb-2 relative">
+                                <div className="aspect-[2/3] w-full bg-gray-50 flex items-center justify-center overflow-hidden mb-2 relative">
                                         {/* Main Image */}
                                         <Image
                                             src={product.image ?? '/images/products/placeholder.png'}
@@ -114,12 +114,12 @@ export default function ProductsSection() {
                                         <div className="mt-2">
                                             {product.isSale ? (
                                                 <>
-                                                    <span className="text-xs md:text-sm lg:text-sm text-gray-300 line-through">{`$${(product.originalPrice).toFixed(2)}`}</span>
-                                                    <span className="text-xs md:text-sm lg:text-sm text-black text-gray-700 ml-2">{`${t.products.from} $${getProductPrice(product).toFixed(2)}`}</span>
+                                                    <span className="text-xs md:text-sm lg:text-sm text-gray-300 line-through">{`${(product.originalPrice).toFixed(2)} JOD`}</span>
+                                                    <span className="text-xs md:text-sm lg:text-sm text-black text-gray-700 ml-2">{`${t.products.from} ${getProductPrice(product).toFixed(2)}`}</span>
                                                 </>
                                             ) :
                                             (
-                                                <span className="text-xs md:text-sm lg:text-sm text-gray-700">{`${t.products.from} $${getProductPrice(product).toFixed(2)}`}</span>
+                                                <span className="text-xs md:text-sm lg:text-sm text-gray-700">{`${t.products.from} ${getProductPrice(product).toFixed(2)} JOD`}</span>
                                             )}
                                         </div>
                                     </div>

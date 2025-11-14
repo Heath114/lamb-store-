@@ -23,21 +23,21 @@ export default function Header() {
 
 
       {/* Mobile Layout */}
-      <div className="md:hidden flex items-center justify-between">
+      <div className="md:hidden flex items-center justify-between h-10">
         {/* Left: Menu & Search */}
         <div className="flex items-center gap-2">
           <MenuButton onClick={() => setIsMenuOpen(true)} />
           <SearchIconButton onClick={() => setIsSearchOpen(true)} />
         </div>
         {/* Center: Logo */}
-        <Link href="/" className="absolute left-1/2 -translate-x-1/2">
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2 h-full flex items-center">
           <Image 
-            src="/images/logos/logo.avif" 
+            src="/images/logos/4.png" 
             alt="TechShop Logo" 
             width={100} 
-            height={33}
+            height={40}
             priority
-            className="w-20 sm:w-24 lg:w-28"
+            className="h-full w-auto object-contain"
           />
         </Link>
         {/* Right: Language & Call */}
@@ -57,15 +57,15 @@ export default function Header() {
         </div>
         
         {/* Center: Logo */}
-        <div className="flex justify-center">
-          <Link href="/">
+        <div className="flex justify-center items-center">
+          <Link href="/" className="flex items-center py-1">
             <Image 
-              src="/images/logos/logo.avif" 
+              src="/images/logos/4.png" 
               alt="TechShop Logo" 
               width={120} 
-              height={40} 
+              height={48} 
               priority
-              className="w-28 lg:w-32 2xl:w-36"
+              className="h-auto w-28 lg:w-32 2xl:w-36 object-contain"
             />
           </Link>
         </div>
