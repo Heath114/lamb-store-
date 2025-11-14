@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Product } from '@/app/data/products'; // Assuming you have a Product type
+import { getProductPrice } from '@/app/data/products';
 import { ContactButtons } from './ContactButtons';
 
 // A reusable Icon component for WhatsApp
@@ -38,7 +39,7 @@ export function ProductInfo({ product }: { product: Product }) {
       <h1 className="text-4xl text-gray-900 leading-tight mb-4">{product.name}</h1>
       
       <div className="mb-8 py-2 border-b border-gray-100">
-        <p className="text-4xl font-medium text-gray-900 mb-3">{`${product.price.toFixed(2)} JOD `}</p>
+        <p className="text-4xl font-medium text-gray-900 mb-3">{`${getProductPrice(product).toFixed(2)} JOD `}</p>
         <div className="inline-flex items-center gap-2">
           <div className={`w-3 h-3 rounded-full ${product.inStock !== false ? 'bg-green-500 ring-2 ring-gray-200 ' : 'bg-red-500'}`} />
           <span className="text-xl text-gray-700 font-medium">

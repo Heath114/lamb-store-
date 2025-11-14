@@ -8,8 +8,9 @@ import ImageSection from '@/components/Image';
 import { Locale } from '@/locales/business-config';
 import { getLocaleFromParams } from '@/lib/locale-utils';
 
-export default function Page({ params }: { params: { locale: string } }) {
-  const locale = getLocaleFromParams(params);
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const locale = getLocaleFromParams(resolvedParams);
   
   return (
     <main className="relative">
